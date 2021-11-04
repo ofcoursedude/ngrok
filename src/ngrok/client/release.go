@@ -1,6 +1,7 @@
+//go:build release
 // +build release
 
-package client
+package main
 
 var (
 	rootCrtPaths = []string{"assets/client/tls/ngrokroot.crt"}

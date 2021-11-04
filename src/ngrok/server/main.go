@@ -1,15 +1,16 @@
-package server
+package main
 
 import (
 	"crypto/tls"
 	"math/rand"
-	"ngrok/conn"
-	log "ngrok/log"
-	"ngrok/msg"
-	"ngrok/util"
 	"os"
 	"runtime/debug"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/shared/conn"
+	log "github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/msg"
+	"github.com/ofcoursedude/ngrok/shared/util"
 )
 
 const (
@@ -98,7 +99,7 @@ func tunnelListener(addr string, tlsConfig *tls.Config) {
 	}
 }
 
-func Main() {
+func main() {
 	// parse options
 	opts = parseArgs()
 

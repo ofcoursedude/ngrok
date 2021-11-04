@@ -1,19 +1,20 @@
-package server
+package main
 
 import (
 	"encoding/base64"
 	"fmt"
 	"math/rand"
 	"net"
-	"ngrok/conn"
-	"ngrok/log"
-	"ngrok/msg"
-	"ngrok/util"
 	"os"
 	"strconv"
 	"strings"
 	"sync/atomic"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/shared/conn"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/msg"
+	"github.com/ofcoursedude/ngrok/shared/util"
 )
 
 var defaultPortMap = map[string]int{

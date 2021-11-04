@@ -1,9 +1,10 @@
+//go:build !release && !autoupdate
 // +build !release,!autoupdate
 
-package client
+package main
 
 import (
-	"ngrok/client/mvc"
+	"github.com/ofcoursedude/ngrok/client/mvc"
 )
 
 // no auto-updating in debug mode

@@ -1,13 +1,14 @@
-package server
+package main
 
 import (
 	"encoding/gob"
 	"fmt"
 	"net"
-	"ngrok/cache"
-	"ngrok/log"
 	"sync"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/shared/cache"
+	"github.com/ofcoursedude/ngrok/shared/log"
 )
 
 const (

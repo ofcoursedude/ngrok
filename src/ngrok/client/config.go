@@ -1,18 +1,19 @@
-package client
+package main
 
 import (
 	"fmt"
-	"gopkg.in/yaml.v1"
 	"io/ioutil"
 	"net"
 	"net/url"
-	"ngrok/log"
 	"os"
 	"os/user"
 	"path"
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"gopkg.in/yaml.v1"
 )
 
 type Configuration struct {

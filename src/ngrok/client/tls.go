@@ -1,4 +1,4 @@
-package client
+package main
 
 import (
 	_ "crypto/sha512"
@@ -6,7 +6,8 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"fmt"
-	"ngrok/client/assets"
+
+	"github.com/ofcoursedude/ngrok/client/assets"
 )
 
 func LoadTLSConfig(rootCertPaths []string) (*tls.Config, error) {

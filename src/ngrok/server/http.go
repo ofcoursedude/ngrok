@@ -1,14 +1,17 @@
-package server
+package main
 
 import (
 	"crypto/tls"
 	"fmt"
+
 	vhost "github.com/inconshreveable/go-vhost"
+
 	//"net"
-	"ngrok/conn"
-	"ngrok/log"
 	"strings"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/shared/conn"
+	"github.com/ofcoursedude/ngrok/shared/log"
 )
 
 const (

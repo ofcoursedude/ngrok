@@ -9,13 +9,14 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"net/url"
-	"ngrok/client/assets"
-	"ngrok/client/mvc"
-	"ngrok/log"
-	"ngrok/proto"
-	"ngrok/util"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/ofcoursedude/ngrok/client/assets"
+	"github.com/ofcoursedude/ngrok/client/mvc"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/proto"
+	"github.com/ofcoursedude/ngrok/shared/util"
 )
 
 type SerializedTxn struct {

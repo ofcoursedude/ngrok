@@ -2,14 +2,15 @@
 package web
 
 import (
-	"github.com/gorilla/websocket"
 	"net/http"
-	"ngrok/client/assets"
-	"ngrok/client/mvc"
-	"ngrok/log"
-	"ngrok/proto"
-	"ngrok/util"
 	"path"
+
+	"github.com/gorilla/websocket"
+	"github.com/ofcoursedude/ngrok/client/assets"
+	"github.com/ofcoursedude/ngrok/client/mvc"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/proto"
+	"github.com/ofcoursedude/ngrok/shared/util"
 )
 
 type WebView struct {

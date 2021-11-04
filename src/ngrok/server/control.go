@@ -1,15 +1,16 @@
-package server
+package main
 
 import (
 	"fmt"
 	"io"
-	"ngrok/conn"
-	"ngrok/msg"
-	"ngrok/util"
-	"ngrok/version"
 	"runtime/debug"
 	"strings"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/shared/conn"
+	"github.com/ofcoursedude/ngrok/shared/msg"
+	"github.com/ofcoursedude/ngrok/shared/util"
+	"github.com/ofcoursedude/ngrok/shared/version"
 )
 
 const (

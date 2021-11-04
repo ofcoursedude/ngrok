@@ -1,14 +1,15 @@
-package client
+package main
 
 import (
 	"fmt"
-	"ngrok/client/mvc"
-	"ngrok/client/views/term"
-	"ngrok/client/views/web"
-	"ngrok/log"
-	"ngrok/proto"
-	"ngrok/util"
 	"sync"
+
+	"github.com/ofcoursedude/ngrok/client/mvc"
+	"github.com/ofcoursedude/ngrok/client/views/term"
+	"github.com/ofcoursedude/ngrok/client/views/web"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/proto"
+	"github.com/ofcoursedude/ngrok/shared/util"
 )
 
 type command interface{}

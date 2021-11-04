@@ -1,23 +1,24 @@
-package client
+package main
 
 import (
 	"crypto/tls"
 	"fmt"
-	metrics "github.com/rcrowley/go-metrics"
 	"io/ioutil"
 	"math"
 	"net"
-	"ngrok/client/mvc"
-	"ngrok/conn"
-	"ngrok/log"
-	"ngrok/msg"
-	"ngrok/proto"
-	"ngrok/util"
-	"ngrok/version"
 	"runtime"
 	"strings"
 	"sync/atomic"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/client/mvc"
+	"github.com/ofcoursedude/ngrok/shared/conn"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/msg"
+	"github.com/ofcoursedude/ngrok/shared/proto"
+	"github.com/ofcoursedude/ngrok/shared/util"
+	"github.com/ofcoursedude/ngrok/shared/version"
+	metrics "github.com/rcrowley/go-metrics"
 )
 
 const (

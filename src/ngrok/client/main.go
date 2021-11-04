@@ -1,14 +1,15 @@
-package client
+package main
 
 import (
 	"fmt"
-	"github.com/inconshreveable/mousetrap"
 	"math/rand"
-	"ngrok/log"
-	"ngrok/util"
 	"os"
 	"runtime"
 	"time"
+
+	"github.com/inconshreveable/mousetrap"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	"github.com/ofcoursedude/ngrok/shared/util"
 )
 
 func init() {
@@ -22,7 +23,7 @@ func init() {
 	}
 }
 
-func Main() {
+func main() {
 	// parse options
 	opts, err := ParseArgs()
 	if err != nil {

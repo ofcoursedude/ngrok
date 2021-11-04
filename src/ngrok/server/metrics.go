@@ -1,16 +1,17 @@
-package server
+package main
 
 import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	gometrics "github.com/rcrowley/go-metrics"
 	"io/ioutil"
 	"net/http"
-	"ngrok/conn"
-	"ngrok/log"
 	"os"
 	"time"
+
+	"github.com/ofcoursedude/ngrok/shared/conn"
+	"github.com/ofcoursedude/ngrok/shared/log"
+	gometrics "github.com/rcrowley/go-metrics"
 )
 
 var metrics Metrics
